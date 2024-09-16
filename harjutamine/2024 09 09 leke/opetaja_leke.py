@@ -4,7 +4,7 @@ kohad = {"X":0, "Y":1, "Z":2}
 avatud = {}
 
 for nr in range(kogus):
-    rida = input.split()
+    rida = input().split()
 
     algus = [int(rida[0]), int(rida[1]), int(rida[2])]
     ots = algus[:]
@@ -22,8 +22,6 @@ for nr in range(kogus):
     if algus not in avatud:
         avatud[algus] = set()
     avatud[algus].add(ots)
-
-    print(algus, ots)
 
 algkoht = input().split()
 
