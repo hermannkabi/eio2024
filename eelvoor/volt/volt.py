@@ -31,4 +31,6 @@ for tipp in tipud:
 
         area = haar1*haar2/2
         area2 = paper_area - area
-        print(max(area, area2))
+
+        ans = max(area, area2)
+        print(int(ans) if ans == int(ans) else ans)
